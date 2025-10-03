@@ -89,7 +89,6 @@ function ShowMenu() {
             <li><i class="fa-solid fa-house"></i><a href="../index.html">Dashboard</a></li>
             <li><i class="fa-regular fa-file"></i><a href="Subjects.html">Subjects</a></li>
             <li><i class="fa-solid fa-square-poll-horizontal"></i><a href="">Results</a></li>
-            <li><i class="fa-solid fa-circle-user"></i><a href="Profile.html">Profile</a></li>
         </ul>
     `
     Ham.append(Menu)
