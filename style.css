@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(53, 49, 49);
+}
+#main{
+    max-width: 1500px;
+    width: 95vw;
+    height: auto;
+    margin: 10px auto;
+    background: white;
+    border-radius: 20px;
+    background-color: transparent;
+    box-shadow: 5px 5px 5px 5px white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#BarMenu{
+    width: 30%;
+    padding: 40px 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(41, 37, 37);
+    border-radius: 15px;
+}
+ul{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+li{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    list-style: none;
+    font-size: 2.5rem;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+i{
+    margin-right: 10px;
+}
+
+#line{
+    width: 95%;
+    height: 1px;
+    background-color: rgb(11, 11, 11);
+    box-shadow: 2px 2px 5px 1px white;
+    margin-bottom: 10px;
+}
+
+
+#Details{
+    width: 68%;
+    padding: 10px 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: transparent;
+}
+#Details #Name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    text-align: center;
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    color: wheat;
+    background-color: rgb(50, 47, 47);
+    font-size: 2rem;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+#Details #Name img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+#Details #FullName{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 30px;
+    border-radius: 20px;
+    width: 95%;
+    height: auto;
+    background-color: rgb(62, 60, 60);
+    font-size: 1rem;
+    margin-bottom: 10px;
+    gap: 15px;
+}
+#Details #FullName h2{
+    color: rgb(156, 156, 156);
+}
+#Details #FullName h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+#PersonalDetails{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    width: 95%;
+    height: auto;
+}
+#PersonalDetails #RollNo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 20px;
+    width: 40%;
+    height: auto;
+    background-color: rgb(62, 60, 60);
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+    gap: 15px;
+}
+#PersonalDetails #RollNo h2{
+    color: rgb(156, 156, 156);
+}
+#PersonalDetails #RollNo h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+#PersonalDetails #Semester{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 20px;
+    width: 30%;
+    height: auto;
+    background-color: rgb(62, 60, 60);
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+    gap: 15px;
+}
+#PersonalDetails #Semester h2{
+    color: rgb(156, 156, 156);
+}
+#PersonalDetails #Semester h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+#PersonalDetails #CGPA{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 20px;
+    width: 20%;
+    height: auto;
+    background-color: rgb(62, 60, 60);
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+    gap: 15px;
+}
+#PersonalDetails #CGPA h2{
+    color: rgb(156, 156, 156);
+}
+#PersonalDetails #CGPA h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+#Subjects{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+    gap: 5px;
+}
+#Subjects thead tr{
+    background-color: rgb(62, 60, 60);
+    width: 100%;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    color: beige;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+#Subjects tbody{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#Subjects tbody tr{
+    background-color: rgb(62, 60, 60);
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 1rem;
+    gap: 5px;
+}
+#Subjects tbody tr td{
+    padding-right: 20px;
+}
+
+@media (max-width:1050px) {
+    #Right{
+        display: none;
+    }
+    #Left{
+        padding: 20px 30px;
+        width: 95%;
+        margin: auto;
+    }
+    #image{
+        width: 100%;
+    }
+}
+#Hamburger{
+    display: none;
+    position: relative;
+}
+#Menu{
+    width: 150px;
+    position: absolute;
+    font-size: 20px;
+    background-color: rgb(62, 60, 60);
+    padding: 10px;
+    border-radius: 10px;
+    top: 30px;
+    right: 30px;
+}
+#Menu ul li{
+    font-size: 20px;
+}
+@media (max-width:1060px) {
+    #main{
+        flex-direction: column;
+    }
+    #BarMenu{
+        display: none;
+    }
+    #Details{
+        width: 98%;
+    }
+    #Hamburger{
+        display: flex;
+        justify-content: end;
+        padding-right: 20px;
+        color: white;
+        font-size: 30px;
+    }
+}
+@media (max-width:700px) {
+    #main{
+        padding: 10px 0px;
+    }
+    #Details{
+        width: 100%;
+        padding: 0px;
+    }
+}
+@media (max-width:600px) {
+    #Details #Name{
+        font-size: 20px;
+    }
+    #Details #Name img{
+        width: 60px;
+        height: 60px;
+    }
+    #Details #FullName h1{
+        font-size: 15px;
+    }
+    #PersonalDetails #CGPA{
+        display: none;
+    }
+    #PersonalDetails #RollNo{
+        width: 65%;
+    }
+    #PersonalDetails #Semester{
+        width: 30%;
+    }
+}

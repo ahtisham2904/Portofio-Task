@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(53, 49, 49);
+}
+#main{
+    max-width: 1500px;
+    width: 95vw;
+    height: auto;
+    margin: 20px auto;
+    background: white;
+    border-radius: 20px;
+    background-color: transparent;
+    box-shadow: 5px 5px 5px 5px white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#BarMenu{
+    width: 30%;
+    padding: 40px 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(41, 37, 37);
+    border-radius: 15px;
+}
+ul{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+li{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    list-style: none;
+    font-size: 2.5rem;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+i{
+    margin-right: 10px;
+}
+
+#line{
+    width: 95%;
+    height: 1px;
+    background-color: rgb(11, 11, 11);
+    box-shadow: 2px 2px 5px 1px white;
+    margin-bottom: 10px;
+}
+
+#Details{
+    width: 69%;
+    padding: 10px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    gap: 5px;
+    overflow-x:auto;
+}
+#Details .heading{
+    width: 100%;
+    min-width: 650px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: wheat;
+    background-color: hsl(240, 65%, 37%);
+    border-radius: 5px;
+    padding: 10px;
+}
+.heading h1{
+    font-size: 12px;
+    width: 100px;
+    text-align: center;
+}
+.heading h2{
+    font-size: 12px;
+    width: 100px;
+    text-align: center;
+}
+.heading h3{
+    font-size: 12px;
+    width: 100px;
+    text-align: center;
+}
+.heading h4{
+    font-size: 12px;
+    width: 100px;
+    text-align: center;
+}
+.heading h5{
+    font-size: 12px;
+    width: 100px;
+    text-align: center;
+}
+.heading h5{
+    font-size: 12px;
+    width: 100px;
+    text-align: center;
+}
+.heading h6{
+    font-size: 12px;
+    width: 50px;
+    text-align: center;
+}
+#Details .term{
+    width: 100%;
+    height: 40px;
+    min-width: 650px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: rgb(62, 60, 60);
+    border-radius: 5px;
+    padding: 10px;
+}
+.term h1{
+    font-size: 12px;
+    width: 100px;
+}
+.term h2{
+    font-size: 12px;
+    width: 100px;
+    text-align: center;
+}
+.term h3{
+    font-size: 12px;
+    width: 100px;
+    text-align: center;
+}
+.term h4{
+    font-size: 12px;
+    width: 100px;
+    text-align: center;
+}
+.term h5{
+    font-size: 12px;
+    width: 100px;
+    text-align: center;
+}
+.term h5{
+    font-size: 12px;
+    width: 100px;
+    text-align: center;
+}
+.term h6{
+    font-size: 12px;
+    width: 50px;
+    text-align: center;
+}
+.termDetails{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px;
+    color: wheat;
+    background-color: hsl(240, 65%, 37%);
+}
+.termDetails h1{
+    width: 300px;
+    font-size: 15px;
+}
+.termDetails h2{
+    width: 100px;
+    font-size: 15px;
+}
+.termDetails h3{
+    width: 100px;
+    font-size: 15px;
+}
+.termDetails h4{
+    width: 100px;
+    font-size: 15px;
+    
+}
+
+.courseRow{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(62, 60, 60);
+}
+.courseRow h1{
+    width: 300px;
+    font-size: 15px;
+    
+}
+.courseRow h2{
+    width: 100px;
+    font-size: 15px;
+    text-align: center;
+}
+.courseRow h3{
+    width: 100px;
+    font-size: 15px;
+    text-align: center;
+}
+.courseRow h4{
+    width: 100px;
+    font-size: 15px;
+    text-align: center;
+}
+#Hamburger{
+    display: none;
+    position: relative;
+}
+#Menu{
+    width: 150px;
+    position: absolute;
+    font-size: 20px;
+    background-color: rgb(62, 60, 60);
+    padding: 10px;
+    border-radius: 10px;
+    top: 30px;
+    right: 30px;
+}
+#Menu ul li{
+    font-size: 20px;
+}
+@media (max-width:1067px) {
+    #main{
+        flex-direction: column;
+    }
+    #BarMenu{
+        display: none;
+    }
+    #Details{
+        width: 98%;
+    }
+    #Hamburger{
+        display: flex;
+        justify-content: end;
+        padding-right: 20px;
+        color: white;
+        font-size: 30px;
+    }
+}
