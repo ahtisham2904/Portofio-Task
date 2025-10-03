@@ -238,7 +238,7 @@ i{
     position: relative;
 }
 #Menu{
-    width: 200px;
+    width: 250px;
     position: absolute;
     font-size: 20px;
     background-color: rgb(62, 60, 60);
@@ -254,6 +254,7 @@ i{
     gap: 2px;
 }
 #Menu ul li{
+    width: 100%;
     color: white;
     background-color: rgb(39, 39, 39);
     padding: 10px;
